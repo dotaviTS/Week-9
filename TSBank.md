@@ -235,7 +235,7 @@ sequenceDiagram
 
 #### 1. Login for Staff
 
--   **Endpoint**: `POST /api/v1/staff/login`
+-   **Endpoint**: `POST /api/v1/admin/login`
 -   **Description**: Authenticates a staff member and returns an access token.
 -   **Request Parameters**:
     -   `email`: Email address of the staff
