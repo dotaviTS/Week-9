@@ -231,17 +231,17 @@ Admin ||--o{ Staff : has
 Address ||--o{ CustomerAddress : type_of
 
 User {
-int id
+uuid id
 string email
 string password
 bool isActive
 datetime lastLoginDate
-datetime created_at
+datetime inserted_at
 datetime updated_at
 }
 
 Customer {
-int id
+uuid id
 string firstName
 string lastName
 string phoneNumber
@@ -249,45 +249,43 @@ date dateOfBirth
 string idNumber
 string passportNumber
 bool FICAComplete
-datetime created_at
+datetime inserted_at
 datetime updated_at
 }
 
 Admin {
-int id
+uuid id
 string role
-datetime created_at
+datetime inserted_at
 datetime updated_at
 }
   
 Staff {
-int id
+uuid id
 datetime created_at
 datetime updated_at
 string moreinfo
 }
   
 Account {
-int id
+uuid id
 string accountNumber
 string status
-date dateOpened
 float interestRate
 int overdraftLimit
 string branchCode
 string type
 date lastTransactionDate
-datetime created_at
+datetime inserted_at
 datetime updated_at
 }
 
 Transaction {
-int id
+uuid id
 string type
 string status
 string method
 int amount
-date date
 string description
 int accountId
 datetime created_at
@@ -295,7 +293,7 @@ datetime updated_at
 }
 
 Address {
-int id
+uuid id
 string unitNumber
 string street
 string city
