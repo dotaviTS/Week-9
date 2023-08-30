@@ -278,6 +278,7 @@ string type
 date lastTransactionDate
 datetime inserted_at
 datetime updated_at
+float balance
 }
 
 Transaction {
@@ -285,7 +286,7 @@ uuid id
 string type
 string status
 string method
-int amount
+float amount
 string description
 int accountId
 datetime created_at
